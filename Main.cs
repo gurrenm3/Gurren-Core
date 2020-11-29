@@ -8,7 +8,7 @@ namespace Gurren_Core
         public override void OnApplicationStart()
         {
             base.OnApplicationStart();
-            MelonLogger.Log("Gurren Core has successfully loaded");
+            MelonLogger.Log("Mod has successfully loaded");
         }
 
         public override void OnUpdate()
