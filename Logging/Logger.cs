@@ -8,9 +8,6 @@ namespace Gurren_Core.Logging
 {
     public class Logger
     {
-        internal static GameObject ingameMsgPopup;
-        internal static AssetBundle assetBundle;
-
         public static void ShowMessage(string msg, [Optional] string title, [Optional]double displayTime)
         {
             NkhText nkhText = new NkhText()

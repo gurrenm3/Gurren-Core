@@ -3,7 +3,7 @@ using MelonLoader;
 
 namespace Gurren_Core
 {
-    public class Main : MelonMod
+    public class MelonMain : MelonMod
     {
         public override void OnApplicationStart()
         {

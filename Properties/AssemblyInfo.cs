@@ -13,7 +13,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: MelonInfo(typeof(Gurren_Core.Main), "Gurren Core", "1.0.0", "Gurrenm4")]
+[assembly: MelonInfo(typeof(Gurren_Core.MelonMain), "Gurren Core", "1.0.0", "Gurrenm4")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
