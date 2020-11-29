@@ -15,17 +15,17 @@ namespace Gurren_Core.BTD6
             string regrowText = "";
             string bloonBase = bloonId.Replace("Camo", "").Replace("Fortified", "").Replace("Regrow", "");
 
-            if (setCamo || (bloonId.Contains("Camo")))
+            if (setCamo)
             {
                 if (Game.instance.GetBloonModel(bloonBase + "Camo") != null)
                     camoText = "Camo";
             }
-            if (setFortified || (bloonId.Contains("Fortified")))
+            if (setFortified)
             {
                 if (Game.instance.GetBloonModel(bloonBase + "Fortified") != null)
                     fortifiedText = "Fortified";
             }
-            if (setRegrow || (bloonId.Contains("Regrow")))
+            if (setRegrow)
             {
                 if (Game.instance.GetBloonModel(bloonBase + "Regrow") != null)
                     regrowText = "Regrow";
@@ -33,7 +33,6 @@ namespace Gurren_Core.BTD6
 
             string newBloonID = bloonBase + regrowText + fortifiedText + camoText;
             var newBloon = Game.instance.GetBloonModel(newBloonID);
-
             return newBloon;
         }
 
