@@ -5,8 +5,6 @@ namespace Gurren_Core
 {
     public class Main : MelonMod
     {
-        public static readonly string currentVersion = "1.0.0";
-
         public override void OnApplicationStart()
         {
             base.OnApplicationStart();
