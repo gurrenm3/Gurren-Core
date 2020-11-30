@@ -443,6 +443,8 @@
   <ItemGroup>
     <Compile Include="Api\BTD6\_Bloon.cs" />
     <Compile Include="Api\BTD6\_BloonModel.cs" />
+    <Compile Include="Api\BTD6\_Tower.cs" />
+    <Compile Include="Api\BTD6\_TowerModel.cs" />
     <Compile Include="Extensions\BloonExt.cs" />
     <Compile Include="Extensions\BloonModelExt.cs" />
     <Compile Include="Extensions\GameExt.cs" />
@@ -450,6 +452,7 @@
     <Compile Include="Api\Logging\NotificationMgr.cs" />
     <Compile Include="MelonMain.cs" />
     <Compile Include="Patches\_BTD6Player\GetAnalyticsInfo.cs" />
+    <Compile Include="Patches\_MainMenu\OnEnable.cs" />
     <Compile Include="Patches\_ProfileModel\Validate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

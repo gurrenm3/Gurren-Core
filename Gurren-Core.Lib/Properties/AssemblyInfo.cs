@@ -1,4 +1,6 @@
-﻿using MelonLoader;
+﻿using Gurren_Core;
+using Gurren_Core.Updater;
+using MelonLoader;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
@@ -13,8 +15,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: MelonInfo(typeof(Gurren_Core.MelonMain), "Gurren Core", "1.0.0", "Gurrenm4")]
+[assembly: MelonInfo(typeof(MelonMain), "Gurren Core", "1.0.1", "Gurrenm4")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
+//[assembly: LatestVersionURL(typeof(MelonMain), "https://api.github.com/repos/gurrenm3/Gurren-Core/releases")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
 // to COM components.  If you need to access a type in this assembly from
@@ -34,5 +37,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0")]
-[assembly: AssemblyFileVersion("1.0.0")]
+[assembly: AssemblyVersion("1.0.1")]
+[assembly: AssemblyFileVersion("1.0.1")]

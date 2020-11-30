@@ -1,6 +1,6 @@
 ﻿using Assets.Scripts.Models.Bloons;
 using Assets.Scripts.Unity;
-using Gurren_Core.BTD6;
+using Gurren_Core.Api.BTD6;
 using System;
 
 namespace Gurren_Core.Extensions

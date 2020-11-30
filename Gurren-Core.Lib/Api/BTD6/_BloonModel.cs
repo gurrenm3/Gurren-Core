@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using Gurren_Core.Extensions;
 using Assets.Scripts.Models.Bloons;
 
-namespace Gurren_Core.BTD6
+namespace Gurren_Core.Api.BTD6
 {
     public class _BloonModel
     {

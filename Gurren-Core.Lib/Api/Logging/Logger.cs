@@ -1,8 +1,6 @@
-﻿using Assets.Scripts.Unity.UI_New.Popups;
-using Gurren_Core.Utils;
+﻿using Gurren_Core.Utils;
 using System;
 using System.Runtime.InteropServices;
-using UnityEngine;
 
 namespace Gurren_Core.Logging
 {
