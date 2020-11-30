@@ -441,13 +441,13 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BTD6\_Bloon.cs" />
-    <Compile Include="BTD6\_BloonModel.cs" />
+    <Compile Include="Api\BTD6\_Bloon.cs" />
+    <Compile Include="Api\BTD6\_BloonModel.cs" />
     <Compile Include="Extensions\BloonExt.cs" />
     <Compile Include="Extensions\BloonModelExt.cs" />
     <Compile Include="Extensions\GameExt.cs" />
-    <Compile Include="Logging\Logger.cs" />
-    <Compile Include="Logging\NotificationMgr.cs" />
+    <Compile Include="Api\Logging\Logger.cs" />
+    <Compile Include="Api\Logging\NotificationMgr.cs" />
     <Compile Include="MelonMain.cs" />
     <Compile Include="Patches\_BTD6Player\GetAnalyticsInfo.cs" />
     <Compile Include="Patches\_ProfileModel\Validate.cs" />
@@ -457,15 +457,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Updater\LatestVersionAttribute.cs" />
-    <Compile Include="Updater\UpdateHandler.cs" />
-    <Compile Include="Utils\Guard.cs" />
-    <Compile Include="Utils\JsonSerializer.cs" />
-    <Compile Include="Utils\MelonModInfo.cs" />
-    <Compile Include="Updater\UpdateMgr.cs" />
-    <Compile Include="Web\FileDownloader.cs" />
-    <Compile Include="Web\GithubReleaseConfig.cs" />
-    <Compile Include="Web\WebReader.cs" />
+    <Compile Include="Api\Updater\LatestVersionAttribute.cs" />
+    <Compile Include="Api\Updater\UpdateHandler.cs" />
+    <Compile Include="Api\Utils\Guard.cs" />
+    <Compile Include="Api\Utils\JsonSerializer.cs" />
+    <Compile Include="Api\Utils\MelonModInfo.cs" />
+    <Compile Include="Api\Updater\UpdateMgr.cs" />
+    <Compile Include="Api\Web\FileDownloader.cs" />
+    <Compile Include="Api\Web\GithubReleaseConfig.cs" />
+    <Compile Include="Api\Web\WebReader.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
