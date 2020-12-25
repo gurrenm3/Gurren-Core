@@ -19,6 +19,7 @@ namespace Gurren_Core.Extensions
         {
             return game.playerService.Player.Data.monkeyMoney.Value;
         }
+
         public static void SetMonkeyMoney(this Game game, double newMM)
         {
             game.playerService.Player.Data.monkeyMoney.Value = newMM;
@@ -28,6 +29,7 @@ namespace Gurren_Core.Extensions
         {
             return game.model.GetBloon(bloonName);
         }
+
         public static List<BloonModel> GetAllBloonModels(this Game game)
         {
             return game.model.bloons.ToList<BloonModel>();
@@ -38,6 +40,7 @@ namespace Gurren_Core.Extensions
         {
             return game.model.GetTower(towerName, pathOneUpgrade, pathTwoUpgrade, pathThreeUpgrade);
         }
+
         public static List<TowerModel> GetAllTowerModels(this Game game)
         {
             return game.model.towers.ToList<TowerModel>();

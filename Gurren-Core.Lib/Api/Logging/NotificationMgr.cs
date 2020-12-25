@@ -73,7 +73,7 @@ namespace Gurren_Core.Logging
 
             //set pos so elements are positioned correctly
             var windowHeight = Screen.height;
-            //Logger.Log(windowHeight.ToString());
+            //MelonLogger.Log(windowHeight.ToString());
 
             var test1 = (windowHeight / 8) * 1.155f;
             //var spaceBetweenSlots = 110 * slot;

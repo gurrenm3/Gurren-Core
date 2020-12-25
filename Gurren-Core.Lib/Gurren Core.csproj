@@ -90,6 +90,7 @@
     <Compile Include="Extensions\GameExt.cs" />
     <Compile Include="Api\Logging\Logger.cs" />
     <Compile Include="Api\Logging\NotificationMgr.cs" />
+    <Compile Include="Extensions\InGameExt.cs" />
     <Compile Include="MelonMain.cs" />
     <Compile Include="Patches\_BTD6Player\GetAnalyticsInfo.cs" />
     <Compile Include="Patches\_MainMenu\OnEnable.cs" />

@@ -1,4 +1,5 @@
-﻿using Gurren_Core.Utils;
+﻿using Gurren_Core.Logging;
+using Gurren_Core.Utils;
 using MelonLoader;
 using System;
 using System.Net;
