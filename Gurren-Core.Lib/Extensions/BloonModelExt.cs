@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Models.Bloons;
 using Assets.Scripts.Unity;
 using Gurren_Core.Api.BTD6;
+using MelonLoader;
 
 namespace Gurren_Core.Extensions
 {
@@ -25,6 +26,11 @@ namespace Gurren_Core.Extensions
         public static void SetRegrow(this BloonModel bloonModel, bool isRegrow)
         {
             bloonModel = _BloonModel.SetBloonStatus(bloonModel.name, bloonModel.isCamo, bloonModel.isFortified, isRegrow);
+        }
+
+        public static void RemoveBloonStatus(this BloonModel bloonModel, bool removeCamo, bool removeFortify, bool removeRegrow)
+        {
+            bloonModel = _BloonModel.RemoveBloonStatus(bloonModel.name, removeCamo, removeFortify, removeRegrow);
         }
 
         public static int GetBloonIdNum(this BloonModel bloonModel)
