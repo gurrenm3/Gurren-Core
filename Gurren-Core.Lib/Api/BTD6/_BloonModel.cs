@@ -6,9 +6,9 @@ using Assets.Scripts.Models.Bloons;
 
 namespace Gurren_Core.Api.BTD6
 {
-    public class _BloonModel
+    internal class _BloonModel
     {
-        public static BloonModel SetBloonStatus(string bloonId, [Optional] bool setCamo, [Optional] bool setFortified, [Optional] bool setRegrow)
+        internal static BloonModel SetBloonStatus(string bloonId, [Optional] bool setCamo, [Optional] bool setFortified, [Optional] bool setRegrow)
         {
             string camoText = "";
             string fortifiedText = "";
@@ -37,7 +37,7 @@ namespace Gurren_Core.Api.BTD6
         }
 
 
-        public static BloonModel RemoveBloonStatus(string bloonId, bool removeCamo, bool removeFortified, bool removeRegrow, bool ignoreException = true)
+        internal static BloonModel RemoveBloonStatus(string bloonId, bool removeCamo, bool removeFortified, bool removeRegrow, bool ignoreException = true)
         {
             if (bloonId.Contains("Camo") && removeCamo)
                 bloonId = bloonId.Replace("Camo", "");

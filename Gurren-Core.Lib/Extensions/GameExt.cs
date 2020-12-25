@@ -6,7 +6,7 @@ using Assets.Scripts.Unity;
 using Assets.Scripts.Unity.Player;
 using System.Collections.Generic;
 using System.Linq;
-
+using System.Runtime.InteropServices;
 
 namespace Gurren_Core.Extensions
 {
@@ -17,21 +17,11 @@ namespace Gurren_Core.Extensions
 
         public static double GetMonkeyMoney(this Game game)
         {
-            if (game != null)
-            {
-                return game.playerService.Player.Data.monkeyMoney.Value;
-            }
-            else
-            {
-                return 0;
-            }
+            return game.playerService.Player.Data.monkeyMoney.Value;
         }
         public static void SetMonkeyMoney(this Game game, double newMM)
         {
-            if (game != null)
-            {
-                game.playerService.Player.Data.monkeyMoney.Value = newMM;
-            }
+            game.playerService.Player.Data.monkeyMoney.Value = newMM;
         }
 
         public static BloonModel GetBloonModel(this Game game, string bloonName)
@@ -43,9 +33,10 @@ namespace Gurren_Core.Extensions
             return game.model.bloons.ToList<BloonModel>();
         }
 
-        public static TowerModel GetTowerModel(this Game game, string towerName)
+        public static TowerModel GetTowerModel(this Game game, string towerName, [Optional] int pathOneUpgrade, 
+            [Optional] int pathTwoUpgrade, [Optional] int pathThreeUpgrade)
         {
-            return game.model.GetTower(towerName);
+            return game.model.GetTower(towerName, pathOneUpgrade, pathTwoUpgrade, pathThreeUpgrade);
         }
         public static List<TowerModel> GetAllTowerModels(this Game game)
         {

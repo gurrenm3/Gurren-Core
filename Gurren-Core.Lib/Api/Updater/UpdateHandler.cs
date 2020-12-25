@@ -245,7 +245,7 @@ namespace Gurren_Core.Web
                 if (!file.EndsWith(".zip") && !file.EndsWith(".rar") && !file.EndsWith(".7z"))
                     continue;
 
-                using (ZipArchive archive = System.IO.Compression.ZipFile.OpenRead(file))
+                using (ZipArchive archive = ZipFile.OpenRead(file))
                 {
                     foreach (ZipArchiveEntry entry in archive.Entries)
                     {
